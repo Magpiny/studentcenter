@@ -1,0 +1,51 @@
+{% extends 'main.html' %}
+{% load tz %},
+{% block content %}
+
+<div class="profile-page layout layout--3">    
+  <div class="container">
+
+       <!--Topics start-->
+        
+            {% include 'base/topics_component.html' %}
+          
+
+       <!-- Topics End -->   
+            
+        
+    <div class="roomList">
+        <div class="profile">
+          <div class="profile__avatar">
+            <div class="avatar avatar--large active">
+              <img src="https://randomuser.me/api/portraits/men/11.jpg" />
+            </div>
+          </div>
+          <div class="profile__info">
+            <h3>{{user.username}}</h3>
+            <p>{{user.email|urlize }}</p>
+            
+            <p>{{user.firstname }}</p>
+            {% localtime on %}
+                <p> Member since: {{user.date_joined | date:"D d M Y T" }} at {{ user.date_joined  |time:"h:i A" }} </p>
+                <p>Last Login : {{user.last_login | date:"D d M Y T"}} at {{ user.last_login |time:"h:i A" }}</p>
+            {% endlocaltime %}
+            {% if request.user == user %}
+              <a href="{% url 'edit_user' %}" class="btn btn--main btn--pill">Edit Profile</a>
+            {% endif %}
+          </div>
+          <div class="profile__about">
+            <h3>About</h3>
+            <p>
+              {% lorem 1 p random %}
+            </p>
+          </div>
+        </div>
+        {% include 'base/feed_component.html' %}
+
+        </div>
+        
+            {% include 'base/activities_component.html' %}
+        </div>
+  </div>
+</div>
+{% endblock content %}
