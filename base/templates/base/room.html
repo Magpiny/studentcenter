@@ -103,7 +103,7 @@
                         <div class="avatar avatar--small">
                           <img src="{{ comment.user.avatar.url }}" />
                         </div>
-                        <span>@{{ comment.user }}</span>
+                        <span>@{{ comment.user.username }}</span>
                       </a>
                       <span class="thread__date">{{ comment.created | timesince }} ago</span>
                     </div>
