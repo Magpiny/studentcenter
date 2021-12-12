@@ -106,11 +106,11 @@ uritemplate==3.0.1
 urllib3==1.26.7
 uvicorn==0.15.0
 uvloop==0.16.0
-validate==5.1.0.dev0
+
 virtualenv==20.10.0
 virtualenv-clone==0.5.7
 watchgod==0.7
-wcwidth==0.2.5
+
 webencodings==0.5.1
 websockets==10.0
 Werkzeug==1.0.1
