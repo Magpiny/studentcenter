@@ -23,5 +23,6 @@
         "titleBar.border": "#215732",
         "titleBar.inactiveBackground": "#21573299",
         "titleBar.inactiveForeground": "#e7e7e799"
-    }
+    },
+    "python.formatting.provider": "autopep8"
 }
