@@ -48,8 +48,8 @@ INSTALLED_APPS = [
 AUTH_USER_MODEL = 'base.User'
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.security.SecurityMiddleware',
 
     'corsheaders.middleware.CorsMiddleware',
 
