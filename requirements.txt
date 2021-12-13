@@ -48,7 +48,7 @@ sqlparse==0.4.2
 uritemplate==3.0.1
 urllib3==1.26.7
 
-validate==5.1.0.dev0
+
 virtualenv==20.10.0
 virtualenv-clone==0.5.7
 
