@@ -11,8 +11,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import dj_database_url
 import os
+import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -156,5 +157,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# prod_db = dj_database_url.config(conn_max_age=None)
-# DATABASES['default'].update(prod_db)
+prod_db = dj_database_url.config(conn_max_age=None)
+DATABASES['default'].update(prod_db)
+
+django_heroku.settings(locals())
