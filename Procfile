@@ -1,1 +1,1 @@
-web: gunicorn studentcenter.wsgi
+web:gunicorn studentcenter.wsgi
