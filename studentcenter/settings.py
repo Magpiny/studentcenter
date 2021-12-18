@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-buxh&z2_lyr1m%#9-ayu#9p+-=tnx@=v!w70grwl@s)q&y7i@s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://studentscorner.herokuapp.com', '127.0.0.1']
 
@@ -200,4 +200,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # DATABASES['default'].update(prod_db)
 
 # django_heroku.settings(locals())
-django_heroku.settings(config=locals(), staticfiles=False, logging=False)
+django_heroku.settings(locals(), staticfiles=False, logging=False)
