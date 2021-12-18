@@ -1,6 +1,5 @@
 decorator==5.1.0
 
-dj-database-url==0.5.0
 Django==4.0
 django-allauth==0.45.0
 django-cors-headers==3.10.1
@@ -53,7 +52,5 @@ urllib3==1.26.7
 
 virtualenv==20.10.0
 virtualenv-clone==0.5.7
-
-websockets==10.0
 
 whitenoise==5.3.0
