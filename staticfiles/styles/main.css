@@ -1,0 +1,15 @@
+.info {
+    color: lightskyblue;
+}
+
+.success {
+    color: rgb(120, 196, 120);
+}
+
+.error {
+    color: rgb(228, 49, 42);
+}
+
+.warning {
+    color: yellow;
+}

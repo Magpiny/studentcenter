@@ -27,3 +27,9 @@ urlpatterns = [
     path('activities/', views.m_activities, name="activities"),
 
 ]
+
+# Error messages
+handler404 = 'base.views.error_404'
+# handler500 = 'myappname.views.error_500'
+# handler403 = 'myappname.views.error_403'
+# handler400 = 'myappname.views.error_400'

@@ -232,3 +232,22 @@ def m_activities(request):
 
     context = {'room_messages': room_messages, 'message_count': message_count}
     return render(request, 'base/m_activities.html', context)
+
+# Error messages
+
+def error_404(request, exception):
+
+        return render(request,'404.html')
+
+# def error_500(request,  exception):
+#     data = {}
+#     return render(request,'500.html', data)
+        
+# def error_403(request, exception):
+#     data = {}
+
+#     return render(request,'403.html')
+
+# def error_400(request,  exception):
+#     data = {}
+#     return render(request,'400.html', data) 
